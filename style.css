@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -18,13 +18,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
-}
+}*/
 
 body {
-  margin: 0.3em 0;
-  font: 13px/1.5 sans-serif;
-  background: white;
-  margin: 0 15vw;
+	background-color: white;
+	font: 13px/1.5 sans-serif;
+	margin: 0.3em 0;
+	display: block;
 }
 
 a {
@@ -36,9 +36,12 @@ a {
 ==========================*/
 
 header {
-  margin: 5vh 0;
-  text-align: justify;
-  font-size: 150%;
+	text-align: justify;
+	vertical-align: top;
+	width: 70%;
+	font-size: 150%;
+	margin: 0 auto;
+	padding: .5em 1em;
 }
 
 .p-1, .p-2, .welcome {
@@ -57,27 +60,36 @@ header {
 ==========================*/
 
 .icon-container {
-  width: 100%;
-  vertical-align: middle;
+	text-align: justify;
+	vertical-align: top;
+	width: 70%;
+	font-size: 150%;
+	margin: 0 auto;
+	padding: .5em 1em;
+  max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-/*.col {
-  width: 25%;
+.img-container {
+	width: 25%;
+	min-width: 160px;
+	height: 175px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*.icon {
+  line-height: 175px;
 }*/
 
-.icon {
-  width: 24.75%;
-  min-width: 130px;
-  max-width: 400px;
-  height: 175px;
-  line-height: 175px;
-  float: left;
-  text-align: center;
-}
-
 img {
-  width: 135px;
+	width: 25%;
+  min-width: 135px;
   vertical-align: middle;
+	border: none;
 }
 
 .clearfix {
